@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+</head>
+<body>
+
+	<fieldset>
+	<legend>Novell Services Login</legend>
+	<form method="POST" action="" enctype="multipart/form-data">
+		<label>Username: </label>
+		<input type="text" name="name" value="">
+		<br>
+		<br>
+		<label>Password</label>
+		<input type="password" name="">
+		<br>
+		<br>
+		<label>City of: </label>
+		<input type="text" name="City">
+		<br>
+		<br>
+		<label>Employment:: </label>
+		<input type="text" name="Employment">
+		<br>
+		<br>
+		<label>Web server:</label>
+		<select name="Web"> <!-- required multiple size="2" -->
+			<option value="">-choose a server-</option>\
+		</select>
+
+		<br>
+		<br>
+		<label>Please specify your role:</label><br>
+		<input type="radio" name="Please" value="Admin" checked>Admin<br>
+		<input type="radio" name="Please" value="Engineer">Engineer<br>
+		<input type="radio" name="Please" value="Manager" checked>Manager<br>
+		<input type="radio" name="Please" value="Guest">Guest<br>
+		
+		<br><br>
+
+		<label>Single Sign-on to the following</label><br>
+		<input type="checkbox" name="Single" value="Mall" checked>Mall<br>
+		<input type="checkbox" name="Single" value="Payroll" checked>Payroll<br>
+		<input type="checkbox" name="Single" value="Self=service">Self service<br>
+		<br><br>
+		<button type="submit">Login</button>
+		<input type="reset" name="reset">
+
+
+	</form>
+	</fieldset>
+	<!-- <input type="reset" name=""> -->
+	<!-- <br>
+	<br>
+	<input type="submit" name="" value="submit"> -->
+
+
+
+</body>
+</html>
