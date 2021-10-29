@@ -2,152 +2,45 @@
 <html>
 <head>
 	<title></title>
-<!-- 	<style type="text/css">
-		input:invalid {
-  border: 3px solid red;
-}
-	</style> -->
 </head>
 <body>
-	<!-- required  disabled readonly min="2021-01-01" max="2021-11-11"  pattern="[A-z]+"-->
+	<table border="1" width="300">
+		<form>
+			<tr>
+				<th>Name</th>
+				<th>Value</th>
+			</tr>
+			<tr>
+				<td>Name</td>
+				<td><input type="text" name=""></td>
+			</tr>
+			<tr>
+				 <td>Sex</td> 
+				 <td> <input type="radio" name="sex" value="male"> Male <br> 
+				 <input type="radio" name="sex" value="female" checked> Female </td>
+			</tr>
+			<tr>
+				<td>Eye color</td>
+				<td><select name="eye color">
+				<option selected>green</option></select>
+				 </td>
+			</tr>
 
-	<fieldset>
-	<legend>Registration Form</legend>
-	<form method="POST" action="" enctype="multipart/form-data">
-		<label>Name: </label>
-		<input type="text" name="name" value=""  autocomplete="off" placeholder="Enter Your Name">
-		<br><br>
-
-		<label for="ice-cream-choice">Choose a flavor:</label>
-		<input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice" />
-
-		<datalist id="ice-cream-flavors">
-		    <option value="Chocolate">
-		    <option value="Coconut">
-		    <option value="Mint">
-		    <option value="Strawberry">
-		    <option value="Vanilla">
-		</datalist>
-
-		<br><br>
-
-		<label>Email: </label>
-
-		<input type="email" name="email" required placeholder="Enter Your Email">
-
-		<br><br>
-
-		<label>Qty: </label>
-		<input type="number" name="qty">
-
-		<br><br>
-
-		<label>Gender:</label>
-		<input type="radio" name="Gender" value="Male" checked>Male
-		<input type="radio" name="Gender" value="Female">Female
-
-		<br><br>
-
-		<label>Hobby</label>
-		<input type="checkbox" name="hobby" value="Cricket" checked>Cricket
-		<input type="checkbox" name="hobby" value="Football" checked>Football
-		<input type="checkbox" name="hobby" value="Tenis">Tenis
-		<input type="checkbox" name="hobby" value="Baseball">Baseball
-
-		<br><br>
-
-		<label>City</label>
-		<select name="city"> <!-- required multiple size="2" -->
-			<option value="">Select</option>
-			<option value="Vadodara">Vadodara</option>
-			<option value="Anand">Anand</option>
-			<option value="Surat">Surat</option>
-			<option value="Gotri">Gotri</option>
-			<option value="Bharuch">Bharuch</option>
-		</select>
-
-		<br><br>
-
-		<label>Address: </label>
-		<textarea name="Address" placeholder="Addrees" cols="" rows="" required></textarea>
-		<br><br>
-
-		<label>Profile Pic: </label>
-		<input type="file" name="" required multiple>
-
-		<br><br>
-
-		<label>Date</label>
-		<input type="date" name="" required >
-		<br><br>
-
-		<label>Date & Time</label>
-		<input type="datetime-local" name="" required >
-		<br><br>
-
-		<label>Time</label>
-		<input type="time" name="">
-
-		<br><br>
-
-		<label>Month</label>
-		<input type="month" name="">
-		<br><br>
-
-		<label>Week</label>
-
-		<input type="week" name="">
-
-		<br><br>
-
-		<label>Price Range</label>
-		<input type="range" name="" value="2" min="0" max="5">
-		<br><br>
-
-		<label>Search</label>
-
-		<input type="search" name="">
-		<br><br>
-
-		<label>Progress</label>
-		<progress value="20" max="100"></progress>
-		<br><br>	
-		<!-- <input type="submit" name="" value="Send"> -->
-
-		<!-- <br><br> -->
-
-		<label>Tel: </label>
-		<input type="tel" name="">
-
-		<br><br>	
-
-		<label>Color</label>
-		<input type="color" name="">
-
-		<br><br>
-
-		<label>URL</label>
-		<input type="url" name="">
-
-		<br><br>
-
-		<label>Password</label>
-		<input type="password" name="">
-
-		<br><br>
-
-		<button type="submit">Submit</button>
-		<input type="reset" name="reset">
-
-
-	</form>
-	</fieldset>
-	<!-- <input type="reset" name=""> -->
-	<!-- <br>
-	<br>
-	<input type="submit" name="" value="submit"> -->
-
-
-
+			<tr>
+				<td>Check all the apply</td>
+				<td><input type="checkbox" name="Check all the apply">Over 6 feet tall <br>
+				<input type="checkbox" name="Check all the apply">Over 200 pounds
+				</td>
+			</tr>
+			<tr> 
+				<td colspan="2">Describe your athletic ability:<br> 
+					<textarea name="athletic" cols="50" rows="4"></textarea> </td> 
+			</tr>
+			<tr>
+				<td colspan="2" align="center"><input type="submit" value="Enter my information"> 
+				</td>
+			</tr>
+		</form>
+	</table>
 </body>
 </html>
