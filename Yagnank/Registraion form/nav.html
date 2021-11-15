@@ -1,66 +1,75 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
-	<style>
-		
-		*{
+	<title>Menu</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style type="text/css">
+		* {
 			margin: 0;
+			box-sizing: border-box;
+		}
+		ul {
+			list-style-type: none;
 			padding: 0;
+			margin: 0;
+			background-color: lightgreen;
+			overflow: hidden;
 		}
-
-		body{
-			background-color: #f2ecce;
+		ul li {
+			float: left;
 		}
-
-		
-		ul{
-			
-			display: flex;
-			margin-top: 20%;
-			margin-left: 30%;
-		}
-
-		ul li{
-			display: inline-block;
-		}
-
-		ul li a{
-			color: #fff;
+		ul li a {
 			text-decoration: none;
-			font-size: 24px;
-			text-transform: uppercase;
-			padding: 10px  16px;
-			border: 1px solid white;
-			background-color: #51bd79;
+			color: blue;
+			display: inline-block;
+			padding: 13px;
+    		/*background-color: yellow;*/
+    		font-family: verdana;
 		}
 
-		ul li a:hover{
-			background-color: black;
-			color: #fff;
+		.right {
+			float: right;
 		}
 
-/*
-		ul li.active a{
-			background-color: #fff;
-			color: #000;
+		/*div {
+			border: 1px solid black;
+
 		}*/
+		ul li:hover {
+			background-color: yellow;
+		}
+		@media screen and (min-width: 320px) and (max-width: 480px){
+    		/*body {
+    			background-color: red;
+    		}*/
 
+    		ul li {
+    			text-align: center;
+    		}
+
+    		.right {
+    			float: none;
+    		}
+    		ul li {
+    			float: none;
+    		}
+		}
 	</style>
 </head>
 <body>
-
-	<div>
-		
+	<nav>
 		<ul>
-			<li class="active"><a href="">Home</a></li>
-			<li><a href="">About Us</a></li>
-			<li><a href="">Contact Us</a></li>
-			<li><a href="">Services</a></li>
-			<li><a href="">Product</a></li>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Contact</a></li>
+			<li class="right"><a href="">Blog</a></li>
 		</ul>
+	</nav>
 
+	<div class="main">
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
 	</div>
-
 </body>
 </html>
