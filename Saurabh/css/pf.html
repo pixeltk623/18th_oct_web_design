@@ -7,30 +7,45 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 	<style type="text/css">
-		.container{
+		* {
+			padding: 0;
+			box-sizing: border-box;
+			font-family: 'Urbanist', sans-serif;
+			box-sizing: border-box;
+		}
+		body{
 			background-color: #E6E6FA;
-			padding: 0px;	
+			margin: 100px;
+			text-align: center;	
+		}
+		.row .col-30 .col-70{
+			align: center;	
 		}
 		.col-30{
-			text-align: left;
-			
+			width: 100px;
+			float: left;
 		}
 		.col-70{
-			text-align: left;
+			width: 200px;
+			float: left;
 			padding: 0px;
+		}
+		.row {
+			padding: 8px;
+			text-align: center;
 		}
 		label {
 			display: inline-block;
 			margin-top: 10px;
 			
 		}
-		input[type=text],[type=Password] {
-		
+		input[type=text],input[type=Password] {
+			width: 100%;
 			padding: 10px;
 			border: 1px solid lightgray;
 		}
 		select{
-			width: 19%;
+			width: 100%;
 			padding: 10px;
 			border: 1px solid lightgray;
 		}
@@ -40,18 +55,41 @@
 			border: none;
 			font-size: 20px;
 			padding: 15px 40px;
+			cursor: pointer;
 		}
-
 		input[type=submit]:hover {
 			background-color: green;
 		}
-
 		.row::after {
 			content: "";
 			display: table;
 			clear: both;
 		}
-			
+		@media screen and (min-width: 320px) and (max-width: 480px){
+			.col-30 {
+				width: 100%;
+			}
+
+			.col-70 {
+				width: 100%;
+			}
+
+			input[type=submit] {
+				width: 100%;
+			}
+
+			.container {
+				padding: 0px;
+			}
+
+			label {
+				padding: 6px;
+				margin-top: 0px;
+			}
+
+			.row {
+				padding: 6px;
+			}
 	</style>
 </head>
 <body>
@@ -61,6 +99,7 @@
 			<div class="row">
 				<div class="col-30">
 					<label>First Name :</label>
+				</div>
 				<div class="col-70">
 					<input type="text" name="">
 				</div>
@@ -68,13 +107,15 @@
 			<div class="row">
 				<div class="col-30">
 					<label>Last Name :</label>
+				</div>
 				<div class="col-70">
 					<input type="text" name="">
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-30">
-					<label>UserName :</label>
+					<label>User Name :</label>
+				</div>
 				<div class="col-70">
 					<input type="text" name="">
 				</div>
@@ -82,6 +123,7 @@
 			<div class="row">
 				<div class="col-30">
 					<label>Password :</label>
+				</div>
 				<div class="col-70">
 					<input type="Password" name="">
 				</div>
@@ -89,6 +131,7 @@
 			<div class="row">
 				<div class="col-30">
 					<label>Email :</label>
+				</div>
 				<div class="col-70">
 					<input type="text" name="">
 				</div>
@@ -96,6 +139,7 @@
 			<div class="row">
 				<div class="col-30">
 					<label>Mobile No :</label>
+				</div>
 				<div class="col-70">
 					<input type="text" name="">
 				</div>
@@ -115,9 +159,8 @@
 			</div>
 			<div class="row">
 				<input type="submit" name="submit" value="Register">
-				<a href="#">Backto Home</a>
+				<a href="#">Back to Home</a>
 			</div>
-		</div>
 		</div>
 	</main>
 </body>
