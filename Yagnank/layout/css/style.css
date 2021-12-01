@@ -1,7 +1,7 @@
-*{
+/**{
 	margin: 0;
 	padding: 0;
-	/*font-family: 'Bree Serif', serif;*/
+	
 	font-family: 'Roboto', sans-serif;
 	font-weight: bolder;
 
@@ -84,4 +84,13 @@ section{
 		margin-top: -26px;
 
 		}	
+}*/
+
+section {
+	max-width: 1200px;
+    margin: auto;
+}
+div.container {
+	background-color: aliceblue;
+    text-align: center;
 }
