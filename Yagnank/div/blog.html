@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+	/*.main{
+		border: 1px solid black;
+		display: inline-block;
+	}
+	.main .one{
+		border: 2px solid red;
+		width: 200px;
+		height: 250px;
+		/*float: left;*/
+	/*}
+	.main .two{
+		border: 2px solid red;
+		width: 200px;
+		height: 250px;	
+	}
+	.main .three{
+		border: 2px solid red;
+		width: 200px;
+		height: 250px;
+	}*/
+	.one{
+		width: 33.3%;
+		float: left;
+		height: 22%;
+		border: 2px solid black;
+	}
+	.one:hover{
+		background-color: red;
+		height: 100px;
+	}
+	.two{
+		width: 33.3%;
+		float: left;
+		height: 22%;
+		border: 2px solid black;
+	}
+	.two:hover{
+		background-color: yellow;
+		height: 200px;
+	}
+	.three{
+		width: 33.3%;
+		float: left;
+		height: 22%;
+		border: 2px solid black;
+	}
+	.three:hover{
+		background-color: green;
+		height: 300px;
+	}
+	.main:after{
+		content: "";
+		display: table;
+		clear: both;
+	}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="one">1</div>
+			<div class="two">2</div>
+			<div class=three>3</div>
+		</div>
+		<div class="row">
+			<div class="one">4</div>
+			<div class="two">5</div>
+			<div class=three>6</div>
+		</div>
+	</div>
+</body>
+</html>
