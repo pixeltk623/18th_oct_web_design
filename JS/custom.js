@@ -324,4 +324,41 @@ if(year%4==0) {
 
 // JavaScript Program to Calculate the Area of a Triangle 
 
+<<<<<<< HEAD
 // JavaScript Program to Swap Two Variables without using third variables 
+=======
+// JavaScript Program to Swap Two Variables without using third variables
+
+let k=3
+let output = k * 0.621371  //1 km =  0.621371 miles 
+console.log(output);
+
+let km=4.5
+let outin = km * 0.621371;
+console.log(outin);
+
+
+let m = prompt('enter the first variable')
+let n = prompt('enter the second variable')
+
+let o;
+
+o = m;
+m = n;
+n = o;
+
+console.log(`value of m after swapping: ${m}`);
+console.log(`value of n after swapping: ${n}`);
+
+let basevalue = prompt('enter a base of triangle')
+let highvalue = prompt('enter a high of triangle')
+
+let areavalue = basevalue * highvalue / 2;
+
+console.log(`The area of the triangle is ${areavalue}`);
+
+let h = "Hello", w = "World!";
+console.log(h, w); // Hello World!
+[h, w] = [w, h]; //
+console.log(w, h); // World! Hello
+>>>>>>> 64f7697ea05a51caba5a9c61b6cde58c40ada944
