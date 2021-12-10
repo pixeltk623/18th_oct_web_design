@@ -145,27 +145,27 @@ console.log(a);*/
 // console.log(a<=b); // false
 
 
-/*
-let a = 55
-let b = 15
 
-console.log(a); // 55 // 55 // 55 // 55 / 55
+// let a = 55
+// let b = 15
 
-console.log(a++); // 56 // 56 // 56 // 56 // 55
+// console.log(a); // 55 // 55 // 55 // 55 / 55
 
-console.log(a); // 56 // 55 // 56 // 56 // 56
+// console.log(a++); // 56 // 56 // 56 // 56 // 55
 
-console.log(++a); // 57 // 57 // 58 // 57 // 57
+// console.log(a); // 56 // 55 // 56 // 56 // 56
 
-console.log(--a); // 56 // 56 //56 /
-console.log(++a); //57
-console.log(a++); // 57
-console.log(a); // 58
+// console.log(++a); // 57 // 57 // 58 // 57 // 57
 
-console.log(--a); // 57
-console.log(a); // 57 // 58 // 56 // 57 // 57
-console.log(a--); // 57 // 57
-console.log(a);*/
+// console.log(--a); // 56 // 56 //56 /
+// console.log(++a); //57
+// console.log(a++); // 57
+// console.log(a); // 58
+
+// console.log(--a); // 57
+// console.log(a); // 57 // 58 // 56 // 57 // 57
+// console.log(a--); // 57 // 57
+// console.log(a);
 
 
 // console.log(a>=b);
@@ -224,6 +224,10 @@ let a = 10
 // } else {
 // 	console.log('Error');
 // }
+
+
+
+
 
 // 1 - 11:59 => M 
 // 12 - 16 // E 
@@ -306,18 +310,18 @@ if(year%4==0) {
 
 // (0°F − 32) × 5/9 = -17.78°C  (C to F)
 
-let c=15;
-let result = ((c * 9/5) + 32);
-console.log(result);
+// let c=15;
+// let result = ((c * 9/5) + 32);
+// console.log(result);
 
-let f=20;
-let degree = ((f - 32) * (5/9));
-	console.log(degree);
+// let f=20;
+// let degree = ((f - 32) * (5/9));
+// 	console.log(degree);
 
-// JavaScript Program to Convert Kilometers to Miles
+// JavaScript Program to Convert Kilometers to Miles 
 
-// JavaScript Program to Swap Two Variables
+// JavaScript Program to Swap Two Variables 
 
-// JavaScript Program to Calculate the Area of a Triangle
+// JavaScript Program to Calculate the Area of a Triangle 
 
-// JavaScript Program to Swap Two Variables without using third variables
+// JavaScript Program to Swap Two Variables without using third variables 
