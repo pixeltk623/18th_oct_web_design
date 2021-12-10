@@ -155,7 +155,14 @@ console.log(a);*/
 
 // console.log(a); // 56 // 55 // 56 // 56 // 56
 
+<<<<<<< Updated upstream
 // console.log(++a); // 57 // 57 // 58 // 57 // 57
+=======
+console.log(--a); // 57
+console.log(a); // 57 // 58 // 56 // 57 // 57
+console.log(a--); // 57 // 57
+// console.log(a);//56//*/
+>>>>>>> Stashed changes
 
 // console.log(--a); // 56 // 56 //56 /
 // console.log(++a); //57

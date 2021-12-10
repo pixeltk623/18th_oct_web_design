@@ -179,7 +179,11 @@ div.head{
 	border: none;
 	padding: 10px;
 	border-radius: 6px;
+<<<<<<< Updated upstream
 	margin-right:  250px;
+=======
+	margin-right: 200px;
+>>>>>>> Stashed changes
 }
 div.bg{
 	background-image: url(https://www.teqstories.com/footer.778858d7b974975ad4ff.jpg);
