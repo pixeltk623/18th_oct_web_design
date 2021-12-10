@@ -30,11 +30,11 @@
 
 // JavaScript Program to Swap Two Variables without using third variables
 
-// var a = 10;
-// var b = 20;
+var a = 10;
+var b = 20;
 
-// console.log("Before swapping the value of a is " + a + " and b is " + b);
-// a = a + b; //30
-// b = a - b; //10
-// a = a - b; //20
-// console.log("After swapping the value of a is " + a + " and b is " + b);
+console.log("Before swapping the value of a is " + a + " and b is " + b);
+a = a + b; //30
+b = a - b; //10
+a = a - b; //20
+console.log("After swapping the value of a is " + a + " and b is " + b);

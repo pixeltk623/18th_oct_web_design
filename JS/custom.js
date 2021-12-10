@@ -155,14 +155,13 @@ console.log(a);*/
 
 // console.log(a); // 56 // 55 // 56 // 56 // 56
 
-<<<<<<< Updated upstream
 // console.log(++a); // 57 // 57 // 58 // 57 // 57
-=======
-console.log(--a); // 57
-console.log(a); // 57 // 58 // 56 // 57 // 57
-console.log(a--); // 57 // 57
+
+// console.log(--a); // 57
+// console.log(a); // 57 // 58 // 56 // 57 // 57
+// console.log(a--); // 57 // 57
 // console.log(a);//56//*/
->>>>>>> Stashed changes
+
 
 // console.log(--a); // 56 // 56 //56 /
 // console.log(++a); //57
@@ -217,7 +216,7 @@ if (a>=15) {
 */
 
 
-let a = 10 
+// let a = 10 
 
 // let b = 22
 
@@ -331,41 +330,246 @@ if(year%4==0) {
 
 // JavaScript Program to Calculate the Area of a Triangle 
 
-<<<<<<< HEAD
 // JavaScript Program to Swap Two Variables without using third variables 
-=======
+
 // JavaScript Program to Swap Two Variables without using third variables
 
-let k=3
-let output = k * 0.621371  //1 km =  0.621371 miles 
-console.log(output);
+// let k=3
+// let output = k * 0.621371  //1 km =  0.621371 miles 
+// console.log(output);
 
-let km=4.5
-let outin = km * 0.621371;
-console.log(outin);
+// let km=4.5
+// let outin = km * 0.621371;
+// console.log(outin);
 
 
-let m = prompt('enter the first variable')
-let n = prompt('enter the second variable')
+// let m = prompt('enter the first variable')
+// let n = prompt('enter the second variable')
 
-let o;
+// let o;
 
-o = m;
-m = n;
-n = o;
+// o = m;
+// m = n;
+// n = o;
 
-console.log(`value of m after swapping: ${m}`);
-console.log(`value of n after swapping: ${n}`);
+// console.log(`value of m after swapping: ${m}`);
+// console.log(`value of n after swapping: ${n}`);
 
-let basevalue = prompt('enter a base of triangle')
-let highvalue = prompt('enter a high of triangle')
+// let basevalue = prompt('enter a base of triangle')
+// let highvalue = prompt('enter a high of triangle')
 
-let areavalue = basevalue * highvalue / 2;
+// let areavalue = basevalue * highvalue / 2;
 
-console.log(`The area of the triangle is ${areavalue}`);
+// console.log(`The area of the triangle is ${areavalue}`);
 
-let h = "Hello", w = "World!";
-console.log(h, w); // Hello World!
-[h, w] = [w, h]; //
-console.log(w, h); // World! Hello
->>>>>>> 64f7697ea05a51caba5a9c61b6cde58c40ada944
+// let h = "Hello", w = "World!";
+// console.log(h, w); // Hello World!
+// [h, w] = [w, h]; //
+// console.log(w, h); // World! Hello
+
+// let test = "D";
+// switch(test) {
+// 	case "A":
+// 		console.log('A');
+// 		break;
+// 	case "B":
+// 		console.log('B');
+// 		break;
+
+// 	case "C":
+// 		console.log('C');
+// 		break;
+// 	case "D":
+// 		console.log('D');
+// 		break;
+
+// 	default:
+// 		console.log('Error');
+// 		break;
+// }
+
+// let currentDate = new Date();
+
+// let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+// let months = ["January","February","March","April","May","June","July","August","September","October","November","December"]
+
+// // console.log(months);
+
+// // console.log(days);
+
+// // console.log(currentDate.getDay());
+
+// // console.log(days[currentDate.getDay()]);
+
+// // console.log(months[currentDate.getMonth()]);
+
+// let date = currentDate.getDate();
+// let month = currentDate.getMonth();
+// let year = currentDate.getFullYear();
+
+// // console.log(currentDate.getDate());
+// // console.log(currentDate.getFullYear());
+// // console.log(currentDate.getMonth());
+
+
+// console.log(year+"/"+(month+1)+"/"+date);
+
+
+// let hours = currentDate.getHours();
+// let minutes = currentDate.getMinutes();
+// let second = currentDate.getSeconds();
+
+// let amOrPm = "";
+// // console.log(hours+":"+minutes+":"+second);
+
+// if(hours>12) {
+// 	hours = hours-12;
+// 	amOrPm = "PM"
+// } else {
+// 	amOrPm = "AM";
+// }
+
+// console.log(hours+":"+minutes+":"+second+ " "+amOrPm);
+
+
+
+// let m = months[month];
+// switch(m) {
+// 	case "January":
+// 		console.log(m);
+// 		break;
+// 	case "February":
+// 		console.log(m);
+// 		break;
+
+// 	case "March":
+// 		console.log(m);
+// 		break;
+// 	case "April":
+// 		console.log(m);
+// 		break;
+// 	case "May":
+// 		console.log(m);
+// 		break;
+// 	case "June":
+// 		console.log(m);
+// 		break;
+// 	case "July":
+// 		console.log(m);
+// 		break;
+// 	case "August":
+// 		console.log(m);
+// 		break;
+// 	case "September":
+// 		console.log(m);
+// 		break;
+// 	case "October":
+// 		console.log(m);
+// 		break;
+// 	case "November":
+// 		console.log(m);
+// 		break;
+// 	case "December":
+// 		console.log(m);
+// 		break;
+
+// 	default:
+// 		console.log('Error');
+// 		break;
+// }
+
+
+// for loop 
+
+// while loop 
+
+// do while
+
+// foreach 
+
+
+
+// for(let i = 1; i<=10; i++) {
+// 	//console.log("Bua", i);
+
+// 	if(i==3 || i==7 || i==9) {
+// 		continue;
+// 	}
+
+// 	console.log(i);
+// }
+
+// for (var i = 1; i <= 50; i++) {
+// 	//console.log(i);
+
+// 	if (i>20) {
+// 		break;
+// 	} 
+
+// 	console.log(i);
+// }
+
+// for(let i=1; i<=10; i++) {
+	
+// 	if (i%2!=0) {
+// 		console.log(i);
+// 	} 
+
+// }
+
+// let sum = 0;
+
+// for(let i = 1; i<=10; i++) {
+
+// 	sum = sum + i; // 0 + 1 // 1
+
+
+// }
+
+// console.log(sum);
+
+// let sumO = 0;
+// let sumE = 0;
+// for(let i = 1; i<=10; i++) {
+// 	if(i%2!=0) {
+// 		sumO = sumO + i; // 0 + 1 // 1
+// 	} else {
+// 		sumE = sumE + i; // 0 + 1 // 1
+// 	}
+// }
+// console.log("Odd Number Sum: ", sumO);
+// console.log("Even Number Sum: ", sumE);
+
+
+// for (let i=10; i>=1; i--) {
+	
+// 	if (i==7) {
+// 		continue;
+// 	} 
+// 	console.log(i);
+// }
+
+
+let number = 5;
+
+let fact = 1;
+
+if(number>=0) {
+
+	if(number==0 || number==1) {
+		console.log(fact);
+	} else {
+		
+		for(let i = number; i>=1; i--) {
+
+			fact = fact*i;
+		}
+
+		console.log(fact);
+
+	}
+
+} else {
+	console.log('Fact is Not Possible');
+}
