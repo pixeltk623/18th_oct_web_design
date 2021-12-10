@@ -39,7 +39,7 @@ p{
 	background-color: #fefefe;
 	border-radius: 5px;
 	margin: 6px;
-	padding: 17px;
+	padding: 40px;
 }
 .card h5{
 	font-size: 14px;
@@ -51,7 +51,23 @@ p{
 	color: #333;
 	margin-bottom: 0;
 }
-
+.card1{
+	border: 1px solid #e7e7e7;
+	background-color: #fefefe;
+	border-radius: 5px;
+	margin: 6px;
+	padding: 35px;
+}
+.card1 h5{
+	font-size: 14px;
+	font-weight: 600
+}
+.card1 p{
+	font-size: 16px;
+	font-weight: 400;
+	color: #333;
+	margin-bottom: 0;
+}
 button{
 	border: none;
 	float: right;
@@ -123,6 +139,25 @@ div.head{
     border-top: 1px solid #eee;
     padding-top: 15px;
 }
+.gallary1{
+	border: 1px solid #e7e7e7;
+	margin: 10px;
+	padding: 10px;
+}
+.gallary1 img{
+	max-width: 100%;
+}
+.gallary1 h3{
+	font-size: 20px;
+	margin: 25px;
+}
+.gallary1 p{
+	background-color: #fffeff;
+    font-size: 18px;
+    line-height: 22px;
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+}
 .col-left{
 	width: 60%;
 	float: left;
@@ -137,19 +172,21 @@ div.head{
 	padding: 15px;
 	background-color: rgba(222,226,230,.16);
 }
-.btn>button{
+.btn > button{
 
 	background-color: #2672cb;
 	color: white;
 	border: none;
 	padding: 10px;
 	border-radius: 6px;
+	margin-right:  250px;
 }
 div.bg{
 	background-image: url(https://www.teqstories.com/footer.778858d7b974975ad4ff.jpg);
 	padding: 150px;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
+	background-size: cover;
 	}
 .bg>p{
 	font-size: 40px;
@@ -159,18 +196,14 @@ div.bg{
 }
 footer{
 	background-color: black;
-    
+    padding-top: 50px;
+}
+.intro{
+	color: white;
 }
 .col4{
 	float: left;
 	padding: 10px;
-}
-.imgg{
-	background-color: #b7b7b7;
-	border-radius: 500px;
-}
-.intro{
-	color: white;
 }
 ul li a{
 	display: block;
