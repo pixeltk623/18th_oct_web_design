@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<form method="post">
+		<label>Name </label>
+		<input type="text" name="name" id="name" onkeyup="checkMyName()">
+		<span id="e1"></span>
+		<br><br>
+		<input type="submit" name="Submit" id="button">
+	</form>
+
+	<script type="text/javascript">
+
+		let listOfUserName = ['sharvan','dixit','priyank','parth','bua']
+
+		// console.log(listOfUserName);
+
+		// console.log(listOfUserName.includes('sharvansadsa'));
+
+
+		let button = document.getElementById("button");
+		button.disabled = true;
+		//console.log(button)
+
+		function checkMyName() {
+
+			let userName = document.getElementById("name").value;
+
+			if (userName=='') {
+				document.getElementById("e1").innerHTML = "Name can not be blank";
+				document.getElementById("e1").style.color = "red";
+				console.log("Name can not be blank")
+			} else {
+				if(userName.length<3) {
+					document.getElementById("e1").innerHTML = "Minimum Length 3 Required";
+					document.getElementById("e1").style.color = "red";
+				} else if(listOfUserName.includes(userName)) {
+					document.getElementById("e1").innerHTML = "Name is already taken";
+					document.getElementById("e1").style.color = "red";
+				} else {
+					document.getElementById("e1").innerHTML = userName+" is available";
+					document.getElementById("e1").style.color = "green";
+				}
+			}
+
+
+			if(userName.length>=3) {
+				button.disabled = false;
+			} else {
+				button.disabled = true;
+			}
+
+			console.log(userName)
+		}
+	</script>
+</body>
+</html>
