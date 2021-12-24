@@ -1,0 +1,58 @@
+n<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+<div id="product">
+	
+</div>
+	
+<script type="text/javascript">
+	
+	
+	$(document).ready(function() {
+		let html = '';
+		
+		for(var i=1; i<=50; i++) {
+			html += "<div>";
+				html += '<button type="button" data-id='+i+' class="removeProduct">-</button>';
+				html += 	'<input type="text" id="qty_'+i+'" name="qty" value="1">';
+				html += '<button type="button" data-id='+i+' class="addProduct">+</button>';
+			html += "</div>";
+			html += "<br>";
+		}
+
+		document.getElementById('product').innerHTML = html;
+		// console.log(html)
+
+		$(document).on("click", ".addProduct", function() {
+
+
+			var dataId = $(this).data("id");
+		
+			let currentQty = document.getElementById("qty_"+dataId).value;
+
+			document.getElementById("qty_"+dataId).value = ++currentQty;
+
+			// console.log(currentQty);
+		});
+
+		
+
+		$(document).on("click", ".removeProduct", function() {
+			
+			var dataId = $(this).data("id");
+		
+			let currentQty = document.getElementById("qty_"+dataId).value;
+
+			document.getElementById("qty_"+dataId).value = --currentQty;
+
+		});
+	});
+
+</script>
+</body>
+</html>
