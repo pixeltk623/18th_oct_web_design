@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		i {
+			margin-left: 60px;
+		}
+	</style>
+</head>
+<body>
+	<form method="post">
+		<div>	
+			<label>Password</label>
+			<i class="fa fa-eye" id="showHide" aria-hidden="true" onclick="showHide()"> Show</i> 
+		</div>
+		<div>
+			<input type="password" name="password" id="password">
+		</div>
+	</form>
+	<script type="text/javascript">
+		
+		function showHide() {
+
+			let elem = document.getElementById('showHide');
+			let password = document.getElementById('password');
+
+			if (elem.className == 'fa fa-eye') {
+
+				elem.className = "fa fa-eye-slash";
+				password.type = 'text';
+
+			}else{
+
+				elem.className = "fa fa-eye";
+				password.type = 'password';
+
+			}
+
+
+		}
+
+
+	</script>
+</body>
+</html>
