@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>pasv</title>
+</head>
+<style type="text/css">
+	body{
+		/*background-color: #35383d;*/
+		max-width: 1200px;
+		margin: auto;
+		text-align: center;
+		justify-content: center;
+		animation: background infinite 20s;
+	}
+	@keyframes background{
+		0%
+		{
+			background:  #3498db; 
+		}
+		20%
+		{
+			background:  #9b59b6; 
+		}
+		40%
+		{
+			background:  #e74c3c; 
+		}
+		60%
+		{
+			background: #34495e; 
+		}
+		80%
+		{
+			background: #4cd137; 
+		}
+		100%
+		{
+			background: #3498db; 
+		}
+	}  
+	/*body:hover{
+		background-color: yellow;
+	}*/
+	#la{
+		color: white;
+		display: inline-block;
+		font-size: 23px;
+		text-transform: uppercase;
+		padding: 6px;
+	}
+	#la:hover{
+		background-color: skyblue;
+		color:black;
+	}
+	#myform{
+		padding: 250px;
+	}
+	#e1{
+		padding: 12px;
+		font-size: 25px;
+		text-transform: uppercase;
+	}
+	#e1:hover{
+		font-size: 25px;
+		text-transform: uppercase;
+		background-color: skyblue;
+		color:black;
+	}#e2{
+		padding: 12px;
+		font-size: 25px;
+		text-transform: uppercase;
+	}
+	#e2:hover{
+		font-size: 25px;
+		text-transform: uppercase;
+		background-color: skyblue;
+		color:black;
+	}#e3{
+		padding: 12px;
+		font-size: 25px;
+		text-transform: uppercase;
+	}
+	#e3:hover{
+		font-size: 25px;
+		text-transform: uppercase;
+		background-color: skyblue;
+		color:black;
+	}#e4{
+		padding: 12px;
+		font-size: 25px;
+		text-transform: uppercase;
+	}
+	#e4:hover{
+		font-size: 25px;
+		text-transform: uppercase;
+		background-color: skyblue;
+		color:black;
+	}
+	#e5{
+		padding: 12px;
+		font-size: 25px;
+		text-transform: uppercase;
+	}
+	#e5:hover{
+		font-size: 25px;
+		text-transform: uppercase;
+		background-color: skyblue;
+		color:black;
+	}
+	input{
+		width: 450px;
+		height: 35px;
+	}
+	#myform{
+		border: 2px solid gray;
+		margin-top: 45px;
+		padding: 125px 0px;
+		/*height: 100px;*/
+	}
+	#myform:hover{
+		background-color:black;
+	}
+/*	.svg-icon {
+  width: 1em;
+  height: 1em;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: black;
+}
+
+.svg-icon circle {
+  stroke: #4691f6;
+  stroke-width: 25%;
+}*/
+</style>
+<body>
+<div class="border">	
+<form id="myform">
+	<div>
+		 <marquee bgcolor=white behavior=alternate><h3><span style="color: red"> Welcome</span> & please follow the Steps 🙏🙏
+         	 </h3></marquee><br><br>
+		<label id="la">Password</label>
+		<input type="Password" id="pass" onkeyup="passval();">
+	</div>
+	<br>
+	<div>
+		<div id="e1">One lowercase character</div>
+			<div id="e2">One uppercase character</div>
+			<div id="e3">One number</div>
+			<div id="e4">One special character</div>
+			<div id="e5">8 characters minimum</div>
+	</div>
+</form>
+</div>
+<script type="text/javascript">
+	function passval(){
+
+		let Password = document.getElementById('pass').value;
+
+		const reg = /[\!\@\#\$\%\^\&\*\)\(\+\=\.\<\>\{\}\[\]\:\;\'\"\|\~\`\_\-]/g
+
+		if(/[a-z]/.test(Password)){
+				document.getElementById('e1').style.color = 'white '
+		}else{
+			document.getElementById('e1').style.color = 'red'
+		}
+
+		if(/[A-Z]/.test(Password)){
+			 document.getElementById('e2').style.color = 'white '
+		}else{
+			 document.getElementById('e2').style.color = '#red'
+		}
+
+		if(/[1-9]/.test(Password)){
+			document.getElementById('e3').style.color = 'white '
+		}else{
+			document.getElementById('e3').style.color = 'red'
+		}
+
+		if(reg.test(Password)){
+			document.getElementById('e4').style.color = 'white '
+		}else{
+			document.getElementById('e4').style.color = 'red'
+		}
+
+		if(Password.length>=8){
+			document.getElementById('e5').style.color = 'white '
+		}else{
+			document.getElementById('e5').style.color = 'red'
+		}
+	}
+</script>
+</body>
+</html>
