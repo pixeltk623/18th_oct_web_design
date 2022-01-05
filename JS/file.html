@@ -1,0 +1,67 @@
+<!-- Q . File must be there 
+
+Q. Size (100 - 500 KB )
+Q . Jpg png jpeg
+ -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		span {
+			color: red;
+		}
+	</style>
+</head>
+<body>
+
+	<form method="post" enctype="multipart/form-data">
+		<label>Profile Pic</label>
+		<input type="file" name="ProfilePic" class="ProfilePic">
+		<span id="e1"></span>
+		<br><br>
+		<input type="submit" name="Submit" onclick="return fileValidation();">
+	</form>
+	<script type="text/javascript">
+		function fileValidation() {
+			let error1 = document.getElementById("e1");
+			let profilePic = document.getElementsByClassName("ProfilePic");
+			let fileInfo = profilePic[0].files;
+			//console.log(fileInfo[0].size)
+
+			if (fileInfo.length>0) {
+				
+				let fileSize = parseInt((fileInfo[0].size)/1024);
+				let filName = fileInfo[0].name;
+
+				let ext = filName.split(".")[1].toLowerCase()
+				
+
+				if(fileSize>=50) {
+					if(fileSize>100) {
+						error1.innerHTML = "File size is above 150Kb";
+					} else {
+						
+						if(ext=='jpg' || ext=='png' || ext=='jpeg') {
+							error1.innerHTML = "ok";
+						} else {
+							error1.innerHTML = "File Extension is Not Valid (Allowed Ext - jpeg, png, jpg)";
+						}
+
+					}
+				} else {
+					error1.innerHTML = "File size is below 50Kb";
+				}
+
+			} else {
+				//console.log("File is Not Selected")
+				error1.innerHTML = "File is Not Selected";
+			}
+
+			return false;
+		}
+	</script>
+</body>
+</html>
