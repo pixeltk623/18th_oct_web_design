@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+	<input type="file" name="file" id="file">
+	<span id="f1"></span><br><br>
+
+<input type="submit" name="submit" value="Upload" onclick="return filevalidate()">
+	<script type="text/javascript">
+		
+		function filevalidate(){
+
+
+			var file = document.getElementById('file').value;
+
+
+			
+
+
+			 if(file == '') {
+				document.getElementById('f1').innerHTML = "The file is not selected";
+				document.getElementById('f1').style.color = "red";
+			}else{
+				document.getElementById('f1').innerHTML = "";
+			}
+			return false;
+		}
+
+			
+		
+
+	</script>
+
+</body>
+</html>     

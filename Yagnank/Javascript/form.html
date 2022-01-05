@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<form method="POST" id="myForm">
+		<div>
+			<label>Name: </label>
+			<input type="text" name="name" id="name" value="">
+			<span id="e1"></span>
+		</div>
+
+		<div style="margin-top: 9px;">
+			<label>Email: </label>
+			<input type="text" name="email" id="email" value="">
+			<span id="e2"></span>
+		</div>
+
+		<div style="margin-top: 9px;">
+			<label>Gender: </label>
+			<input type="radio" name="gender" value="Male">Male
+			<input type="radio" name="gender" value="Female">Female
+			<input type="radio" name="gender" value="Others">Others
+			<span id="e3"></span>
+		</div>
+
+		<div style="margin-top: 9px;">
+			<label>Hobby: </label>
+			<input type="checkbox" name="hobby" value="Cricket">Cricket
+			<input type="checkbox" name="hobby" value="Football">Football
+			<input type="checkbox" name="hobby" value="Hockey">Hockey
+			<input type="checkbox" name="hobby" value="Kabaddi">Kabaddi
+			<input type="checkbox" name="hobby" value="Baseball">Baseball
+			<span id="e4"></span>
+		</div>
+		<div style="margin-top: 9px;">
+			<label>City: </label>
+			<select name="city" id="city">
+				<option value="">Select</option>
+				<option value="Patna">Patna</option>
+				<option value="Surat">Surat</option>
+				<option value="Anand">Anand</option>
+				<option value="Bharuch">Bharuch</option>
+			</select>
+			<span id="e5"></span>
+		</div>
+		<div style="margin-top: 9px;">
+			<input type="submit" name="submit" onclick="return validateUserForm()">
+		</div>
+	</form>
+	<div id="result">
+		
+	</div>
+	<script type="text/javascript">
+
+		// console.log( `My Name is Kumar ${5+4}` );
+
+		function validateUserForm() {
+			var nameOfUser = document.getElementById('name').value;
+			var e1 = document.getElementById("e1");
+			var email = document.getElementById("email").value;
+			var e2 = document.getElementById("e2"); 
+			var e3 = document.getElementById("e3"); 
+			var e4 = document.getElementById("e4");
+			var gender = document.getElementsByName('gender');
+			var genderValue = '';	
+			var hobbyValue = [];
+			var hobby = document.getElementsByName('hobby');
+			var city = document.getElementById("city").value;
+			var e5 = document.getElementById("e5");
+
+			if(city=='') {
+				e5.innerHTML = "City is not selected";
+				e5.style.color = 'red';
+			} else {
+				e5.innerHTML = "";
+			}
+
+			for(var i=0; i<hobby.length; i++) {
+				if(hobby[i].checked==true) {
+					
+					hobbyValue.push(hobby[i].value);
+				}
+			}	
+			for(var i=0; i<gender.length; i++) {
+				if(gender[i].checked==true) {
+					genderValue = gender[i].value;
+				}
+			}	
+
+			if(hobbyValue.length==0) {
+				e4.innerHTML = "Hobby is not selected";
+				e4.style.color = 'red';
+			} else {
+				if(hobbyValue.length==1) {
+					e4.innerHTML = "Minimum 2 Hobby is Required";
+					e4.style.color = 'red';
+				} else {
+					e4.innerHTML = "";
+				}
+			}
+
+			if(genderValue=='') {
+				e3.innerHTML = "Gender is not selected";
+				e3.style.color = 'red';
+			} else {
+				e3.innerHTML = "";
+			}
+			
+			if (nameOfUser=='') {
+				e1.innerHTML = "Name can not be blank";
+				e1.style.color = 'red';
+			} else {
+				if (nameOfUser.length<3) {
+					e1.innerHTML = "Minimum 3 Letters Required";
+					e1.style.color = 'red';
+				} else {
+					e1.innerHTML = '';
+				}
+				
+			}
+
+			if (email=='') {
+				e2.innerHTML = "Email can not be blank";
+				e2.style.color = 'red';
+			} else {
+
+				if (email.length<7) {
+					e2.innerHTML = "Minimum 7 Letters Required";
+					e2.style.color = 'red';
+				} else if(email.search('@')<1) {	
+					e2.innerHTML = "@ is Missing";
+					e2.style.color = 'red';
+				} else {
+					e2.innerHTML = "";
+				}
+
+			}
+
+			if(nameOfUser!='' && (email!='' && email.length>6 && email.search('@')>0) && genderValue!='' && hobbyValue.length>1 && city!='') {
+				document.getElementById("myForm").reset();
+				
+				document.getElementById("result").innerHTML = nameOfUser + email +genderValue + hobbyValue +city;
+				console.log(nameOfUser);
+				console.log(email);
+				console.log(genderValue);
+				console.log(hobbyValue);
+				console.log(city);
+
+			}
+
+			return false;
+		}
+
+	</script>
+</body>
+</html>
