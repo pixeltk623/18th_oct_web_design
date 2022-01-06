@@ -4,37 +4,70 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title></title>
+	<style type="text/css">
+		span{
+
+			color: red;
+		}
+	</style>
 </head>
 <body>
 
-	<input type="file" name="file" id="file">
-	<span id="f1"></span><br><br>
+<form method="post" enctype="multipart/form-data">
+	<label>File :</label>
+	<input type="file" name="file" class="file">
+	<span id="f1"></span>
+	<br><br>
+	<input type="submit" name="Submit" onclick="return fileValidation();">
+</form>
+</body>
+<script type="text/javascript">
+	
+function fileValidation(){
 
-<input type="submit" name="submit" value="Upload" onclick="return filevalidate()">
-	<script type="text/javascript">
-		
-		function filevalidate(){
+	let error = document.getElementById("f1");
+	let file = document.getElementsByClassName("file");
+	let fileInfo = file[0].files;
 
 
-			var file = document.getElementById('file').value;
+	if (fileInfo.length>0) {
 
+		let fileSize = parseInt((fileInfo[0].size)/1024);
+		let fileName = fileInfo[0].name;
+		let ext = fileName.split(".")[1].toLowerCase()
+
+		if (fileSize>=50) {
+
+			if (fileSize>30) {
+
+				error.innerHTML = "File size is above 100Kb";
+
+			} else {
+
+      			if (ext == 'jpg' || ext == 'png' || ext == 'jpeg') {
+
+      				  error.innerHTML = "";
+
+      			} else {
+
+      				 error.innerHTML = "File Extension allowed in (jpg, png, jpeg)";
+
+      			}
+
+			}
+
+		} else {
 
 			
-
-
-			 if(file == '') {
-				document.getElementById('f1').innerHTML = "The file is not selected";
-				document.getElementById('f1').style.color = "red";
-			}else{
-				document.getElementById('f1').innerHTML = "";
-			}
-			return false;
+			error.innerHTML = "File size is above 50Kb";
 		}
 
-			
-		
+	} else {
 
-	</script>
+		error.innerHTML = "File is Not Selected";
+	}
+	return false;
+}
 
-</body>
-</html>     
+</script>
+</html>
